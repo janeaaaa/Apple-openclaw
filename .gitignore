@@ -1,0 +1,47 @@
+# Sensitive data
+credentials/
+identity/
+logs/
+*.log
+
+# Database (regenerate from sessions)
+memory/*.sqlite
+memory/*.db
+
+# Media
+media/inbound/
+
+# Large downloads
+anything-llm/
+developer-roadmap/
+llama/
+mindsearch/
+privateGPT/
+public-apis/
+yt-dlp/
+
+# Node modules
+workspace/node_modules/
+workspace/*/node_modules/
+
+# Temporary files
+workspace/temp/
+workspace/nul
+*.tmp
+*.bak
+
+# Session files (regenerate)
+agents/*/sessions/*.jsonl
+agents/*/sessions/*.jsonl.*
+
+# Lock files
+.clawhub/lock.json
+
+# Large datasets
+*.zip
+*.tar.gz
+*.pdf
+
+# Windows specific
+*.lnk
+desktop.ini

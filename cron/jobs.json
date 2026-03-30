@@ -1,0 +1,276 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "d78c2687-5376-4e78-83b7-2dd9b7e79482",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "每日热点推送",
+      "enabled": true,
+      "createdAtMs": 1774170120329,
+      "updatedAtMs": 1774832971967,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行每日热点抓取任务：1.抓取微博热搜 2.抓取知乎热榜 3.筛选重要热点（排除娱乐八卦） 4.推送到飞书给静静",
+        "model": "MiniMax-M2.5"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774918800000,
+        "lastRunAtMs": 1774832908638,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 63329,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "2290f0cd-c145-4660-b131-beb218644fb1",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "每日早会",
+      "enabled": true,
+      "createdAtMs": 1774170246828,
+      "updatedAtMs": 1774832884037,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行每日早会：1.读取MEMORY.md查看待办事项 2.检查当前任务优先级 3.列出今日工作计划 4.主动发送到飞书汇报给静静",
+        "model": "MiniMax-M2.5"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774911600000,
+        "lastRunAtMs": 1774832731505,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 152532,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "3e5c8645-9662-430b-941e-d1af65b079b5",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "午间检查",
+      "enabled": true,
+      "createdAtMs": 1774170252168,
+      "updatedAtMs": 1774756964957,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行午间检查：1.检查上午任务执行情况 2.汇报当前进度 3.如有阻碍及时反馈",
+        "model": "MiniMax-M2.5"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774843200000,
+        "lastRunAtMs": 1774756800010,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 164947,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "5639a29c-19d0-4bce-84fa-e46e056aab04",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "下班汇报",
+      "enabled": true,
+      "createdAtMs": 1774170256558,
+      "updatedAtMs": 1774778680203,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 18 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行下班汇报：1.汇总当日完成的任务 2.列出未完成事项及原因 3.主动发送到飞书汇报给静静",
+        "model": "MiniMax-M2.5"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774864800000,
+        "lastRunAtMs": 1774778400011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 280192,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "AxiosError: Request failed with status code 400"
+      }
+    },
+    {
+      "id": "da2f021e-a15c-4951-9179-c598ae716d4a",
+      "agentId": "main",
+      "name": "日常任务检查-9:00",
+      "description": "检查日常任务完成情况并汇报",
+      "enabled": true,
+      "createdAtMs": 1774486706713,
+      "updatedAtMs": 1774832990502,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "检查日常任务完成情况并汇报"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1774918800000,
+        "lastRunAtMs": 1774832971967,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 18535,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "9237682f-c3e8-4087-9ef0-b51dd5c60d1e",
+      "agentId": "main",
+      "name": "日常任务检查-14:00",
+      "description": "检查日常任务完成情况并汇报",
+      "enabled": true,
+      "createdAtMs": 1774486733721,
+      "updatedAtMs": 1774764246865,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "检查日常任务完成情况并汇报"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1774850400000,
+        "lastRunAtMs": 1774764000010,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 246855,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "b90f1237-7107-45d5-a8f1-26ead2e50e0e",
+      "agentId": "main",
+      "name": "日常任务检查-20:00",
+      "description": "检查日常任务完成情况并汇报",
+      "enabled": true,
+      "createdAtMs": 1774486752555,
+      "updatedAtMs": 1774785623847,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "检查日常任务完成情况并汇报"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1774872000000,
+        "lastRunAtMs": 1774785600011,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 23836,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "293f51fc-2b0d-4edc-a583-ba8a5e5c9983",
+      "name": "daily-hot-push",
+      "enabled": true,
+      "createdAtMs": 1774607811043,
+      "updatedAtMs": 1774832908638,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "推送今日AI热点"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "to": "ou_a9c7b81a2b296cec5faa9df7ed96a8c0"
+      },
+      "state": {
+        "nextRunAtMs": 1774911600000,
+        "lastRunAtMs": 1774832884037,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 24601,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

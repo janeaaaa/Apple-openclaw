@@ -1,0 +1,19 @@
+{
+  "id": "83df589a-88a5-41cc-8cd5-0e898de63de1",
+  "enqueuedAt": 1774307597310,
+  "channel": "feishu",
+  "to": "ou_a9c753b6a43a59a7c5c2fa3db",
+  "payloads": [
+    {
+      "text": "🍎 每日早会汇报（2026年3月24日）\n\n静静早上好！以下是今日工作计划：\n\n📋 今日待办\n\n🟡 优先级1：待确认事项\n- 搜索API问题：等待静静确认解决方案\n- 微博/知乎热搜：需要登录认证，已记录问题\n\n🟢 优先级2：日常任务\n- 每日热点推送（9:00）\n- 午间检查（12:00）\n- 下班汇报（18:00）\n\n---\n\n📊 昨日热点推送情况\n- 百度热搜：✅ 成功抓取\n- 微博热搜：❌ 需要登录\n- 知乎热榜：❌ 需要登录\n\n---\n\n💡 今日计划\n1. 执行每日热点推送（9:00）\n2. 跟踪昨日热点内容数据表现\n3. 推进搜索API问题解决\n\n有任何需要调整的，请静静指示~ 🍎",
+      "replyToTag": false,
+      "replyToCurrent": false,
+      "audioAsVoice": false
+    }
+  ],
+  "gifPlayback": false,
+  "silent": false,
+  "retryCount": 5,
+  "lastAttemptAt": 1774409331134,
+  "lastError": "Request failed with status code 400"
+}

@@ -1,0 +1,17 @@
+{
+  "xiaoshuai": {
+    "appId": "cli_a93d0ab12ab95cd1",
+    "appSecret": "YOUR_APP_SECRET_HERE",
+    "permissions": "read+write"
+  },
+  "xiaomei": {
+    "appId": "cli_a93d046f8fa35cd4",
+    "appSecret": "YOUR_APP_SECRET_HERE",
+    "permissions": "read"
+  },
+  "zero": {
+    "appId": "cli_a93d050a88395ceb",
+    "appSecret": "YOUR_APP_SECRET_HERE",
+    "permissions": "read"
+  }
+}

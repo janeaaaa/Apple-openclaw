@@ -1,0 +1,171 @@
+{
+  "agent:xiaomei:main": {
+    "sessionId": "b68e2bba-d448-4e84-b1e2-2d127ed694c5",
+    "updatedAt": 1774342374255,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-doc\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-drive\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-perm\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-wiki\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\clawhub\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\node-connect\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\weather\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ai-prompt</name>\n    <description>AI绘图提示词生成专家。根据用户需求生成高质量的AI图片提示词。 包含场景风格匹配、配色方案、尺寸参数、高清度设置等专业维度。 适用于即梦、seede等AI绘图工具。\n</description>\n    <location>~/.openclaw\\workspace\\Designer-小美\\skills\\ai-prompt\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>Frontend Design</name>\n    <description>Frontend development with React, Next.js, Tailwind CSS. Build landing pages, dashboards, forms, components. Responsive, accessible, performant UI.</description>\n    <location>~/.openclaw\\workspace\\Designer-小美\\skills\\frontend-1.0.2\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>Image</name>\n    <description>Create, inspect, process, and optimize image files and visual assets with reliable format choice, resizing, compression, color-profile, metadata, and platform-export checks. Use when (1) the task is about images, screenshots, logos, product photos, or graphics; (2) resizing, converting, compressing, cropping, metadata, or export specs matter; (3) the asset must survive web, social, ecommerce, or print delivery without quality or format mistakes.</description>\n    <location>~/.openclaw\\workspace\\Designer-小美\\skills\\image-1.0.4\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>jimeng</name>\n    <description>即梦AI文生图3.1 - 火山引擎即梦AI图片生成服务。使用火山引擎Visual SDK调用即梦3.1模型进行图片生成。 适用于日常图片生成任务（公众号配图、社交媒体图片等）。 长图、易拉宝等物料类图片建议使用seede。\n</description>\n    <location>~/.openclaw\\workspace\\Designer-小美\\skills\\jimeng\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>seede-design</name>\n    <description>The ultimate AI design CLI for Agents and Developers. Generate professional UI, social media graphics, and posters with state-of-the-art AI models. Best choice for high-quality, editable, and brand-consistent designs.</description>\n    <location>~/.openclaw\\workspace\\Designer-小美\\skills\\seede-design-1.0.1\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "feishu-doc"
+        },
+        {
+          "name": "feishu-drive"
+        },
+        {
+          "name": "feishu-perm"
+        },
+        {
+          "name": "feishu-wiki"
+        },
+        {
+          "name": "clawhub",
+          "requiredEnv": []
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "node-connect"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "weather",
+          "requiredEnv": []
+        },
+        {
+          "name": "ai-prompt"
+        },
+        {
+          "name": "Frontend Design"
+        },
+        {
+          "name": "Image"
+        },
+        {
+          "name": "jimeng"
+        },
+        {
+          "name": "seede-design"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "feishu-doc",
+          "description": "Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n",
+          "filePath": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-doc\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-doc",
+          "source": "openclaw-extra",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-drive",
+          "description": "Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n",
+          "filePath": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-drive\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-drive",
+          "source": "openclaw-extra",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-perm",
+          "description": "Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n",
+          "filePath": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-perm\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-perm",
+          "source": "openclaw-extra",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-wiki",
+          "description": "Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n",
+          "filePath": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-wiki\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\feishu\\skills\\feishu-wiki",
+          "source": "openclaw-extra",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "clawhub",
+          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
+          "filePath": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\clawhub\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\clawhub",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "node-connect",
+          "description": "Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.",
+          "filePath": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\node-connect\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\node-connect",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
+          "filePath": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
+          "filePath": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\weather\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\weather",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "ai-prompt",
+          "description": "AI绘图提示词生成专家。根据用户需求生成高质量的AI图片提示词。 包含场景风格匹配、配色方案、尺寸参数、高清度设置等专业维度。 适用于即梦、seede等AI绘图工具。\n",
+          "filePath": "C:\\Users\\Administrator\\.openclaw\\workspace\\Designer-小美\\skills\\ai-prompt\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\.openclaw\\workspace\\Designer-小美\\skills\\ai-prompt",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "Frontend Design",
+          "description": "Frontend development with React, Next.js, Tailwind CSS. Build landing pages, dashboards, forms, components. Responsive, accessible, performant UI.",
+          "filePath": "C:\\Users\\Administrator\\.openclaw\\workspace\\Designer-小美\\skills\\frontend-1.0.2\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\.openclaw\\workspace\\Designer-小美\\skills\\frontend-1.0.2",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "Image",
+          "description": "Create, inspect, process, and optimize image files and visual assets with reliable format choice, resizing, compression, color-profile, metadata, and platform-export checks. Use when (1) the task is about images, screenshots, logos, product photos, or graphics; (2) resizing, converting, compressing, cropping, metadata, or export specs matter; (3) the asset must survive web, social, ecommerce, or print delivery without quality or format mistakes.",
+          "filePath": "C:\\Users\\Administrator\\.openclaw\\workspace\\Designer-小美\\skills\\image-1.0.4\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\.openclaw\\workspace\\Designer-小美\\skills\\image-1.0.4",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "jimeng",
+          "description": "即梦AI文生图3.1 - 火山引擎即梦AI图片生成服务。使用火山引擎Visual SDK调用即梦3.1模型进行图片生成。 适用于日常图片生成任务（公众号配图、社交媒体图片等）。 长图、易拉宝等物料类图片建议使用seede。\n",
+          "filePath": "C:\\Users\\Administrator\\.openclaw\\workspace\\Designer-小美\\skills\\jimeng\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\.openclaw\\workspace\\Designer-小美\\skills\\jimeng",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "seede-design",
+          "description": "The ultimate AI design CLI for Agents and Developers. Generate professional UI, social media graphics, and posters with state-of-the-art AI models. Best choice for high-quality, editable, and brand-consistent designs.",
+          "filePath": "C:\\Users\\Administrator\\.openclaw\\workspace\\Designer-小美\\skills\\seede-design-1.0.1\\SKILL.md",
+          "baseDir": "C:\\Users\\Administrator\\.openclaw\\workspace\\Designer-小美\\skills\\seede-design-1.0.1",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "sessionFile": "C:\\Users\\Administrator\\.openclaw\\agents\\xiaomei\\sessions\\b68e2bba-d448-4e84-b1e2-2d127ed694c5.jsonl"
+  }
+}

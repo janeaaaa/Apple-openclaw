@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "skills": {
+    "wechat-article-publisher": {
+      "version": "1.0.0",
+      "installedAt": 1774260301278
+    },
+    "wechat-mp-reader": {
+      "version": "1.0.0",
+      "installedAt": 1774526169031
+    },
+    "daily-hot-push": {
+      "version": "1.0.0",
+      "installedAt": 1774579094209
+    },
+    "ai-boss-assistant": {
+      "version": "1.0.2",
+      "installedAt": 1774581621779
+    },
+    "personal-productivity": {
+      "version": "1.0.0",
+      "installedAt": 1774581631293
+    },
+    "twitter-post": {
+      "version": "1.0.0",
+      "installedAt": 1774581640587
+    },
+    "productivity-bot": {
+      "version": "1.0.0",
+      "installedAt": 1774581658461
+    },
+    "ai-news-research": {
+      "version": "1.0.0",
+      "installedAt": 1774581670221
+    },
+    "auto-ai-web": {
+      "version": "1.0.0",
+      "installedAt": 1774581688087
+    },
+    "ai-intelligent-ad-optimization": {
+      "version": "1.0.3",
+      "installedAt": 1774581721346
+    },
+    "ai-intelligent-chatbot-builder": {
+      "version": "1.0.2",
+      "installedAt": 1774581741203
+    },
+    "web-pilot": {
+      "version": "1.0.0",
+      "installedAt": 1774581760317
+    },
+    "web-automation-helper": {
+      "version": "1.0.1",
+      "installedAt": 1774581779058
+    }
+  }
+}

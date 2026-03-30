@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "profiles": {
+    "kimi-coding:default": {
+      "type": "api_key",
+      "provider": "kimi-coding",
+      "key": "sk-kimi-6eJzUoVdoP1nJ0eawBSHYrnZZUorRKeDayovksR3vmXbwy3qZkxUuKK8zR3Ystjc"
+    },
+    "minimax:default": {
+      "type": "api_key",
+      "provider": "minimax",
+      "key": "sk-cp-228ZKkYWL-raguQh5ILYBYyxhNUeJab5ezaZB2XMP6-i53D97L-0pd3zoAlvbzG2VbRwwfzUzKJ0gL-2FkaAo_N_vc-T9dehuEmKJvORXW_chl-Y5uO4AeI"
+    },
+    "minimax-cn:default": {
+      "type": "api_key",
+      "provider": "minimax-cn",
+      "key": "sk-cp-228ZKkYWL-raguQh5ILYBYyxhNUeJab5ezaZB2XMP6-i53D97L-0pd3zoAlvbzG2VbRwwfzUzKJ0gL-2FkaAo_N_vc-T9dehuEmKJvORXW_chl-Y5uO4AeI"
+    },
+    "minimax-portal:default": {
+      "type": "oauth",
+      "provider": "minimax-portal",
+      "access": "sk-cp-228ZKkYWL-raguQh5ILYBYyxhNUeJab5ezaZB2XMP6-i53D97L-0pd3zoAlvbzG2VbRwwfzUzKJ0gL-2FkaAo_N_vc-T9dehuEmKJvORXW_chl-Y5uO4AeI",
+      "refresh": "TMv2lp14DafGo_VSTBIm7HFdCfsd9wxxYZ_uSY4WLaQ=",
+      "expires": 1804930141571
+    }
+  },
+  "lastGood": {
+    "minimax-portal": "minimax-portal:default"
+  },
+  "usageStats": {
+    "kimi-coding:default": {
+      "errorCount": 0,
+      "lastUsed": 1773305212072
+    },
+    "minimax:default": {
+      "errorCount": 0,
+      "lastUsed": 1773388149909
+    },
+    "minimax-portal:default": {
+      "errorCount": 1,
+      "lastUsed": 1774342084719,
+      "failureCounts": {
+        "rate_limit": 1
+      },
+      "lastFailureAt": 1774342425073,
+      "cooldownUntil": 1774342485073
+    }
+  }
+}

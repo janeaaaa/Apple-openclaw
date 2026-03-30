@@ -1,0 +1,11 @@
+{
+  "wechat": {
+    "app_id": "{{env.WECHAT_APP_ID}}",
+    "app_secret": "{{env.WECHAT_APP_SECRET}}",
+    "author": "Jane"
+  },
+  "_comments": {
+    "app_id": "需要在环境变量中配置：WECHAT_APP_ID",
+    "app_secret": "需要在环境变量中配置：WECHAT_APP_SECRET"
+  }
+}
